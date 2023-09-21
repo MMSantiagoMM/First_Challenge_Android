@@ -2,7 +2,18 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.IMDb2" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- PRIMARY COLOR -->
+        <item name="colorPrimary">@color/yellow</item>
+        <!-- BACKGROUND -->
+        <item name="background">@color/light_grey</item>
+        <!-- SURFACE -->
+        <item name="colorSecondary">@color/white</item>
+        <!-- ON SURFACE -->
+        <item name="colorOnSurface">@color/black</item>
+        <!-- ON BACKGROUND -->
+        <item name="colorOnBackground">@color/dark_grey</item>
+        
+        
     </style>
 
     <style name="Theme.IMDb2" parent="Base.Theme.IMDb2" />

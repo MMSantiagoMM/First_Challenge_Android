@@ -36,6 +36,7 @@
 
 
     <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input_password"
         android:layout_width="310dp"
         android:layout_height="55dp"
         android:background="@drawable/shape_white_text_box"
@@ -46,7 +47,19 @@
         app:layout_constraintEnd_toEndOf="@id/input_user"
         app:layout_constraintVertical_bias="0.13"/>
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="310dp"
+        android:layout_height="55dp"
+        android:background="@drawable/shape_light_grey_text_box"
+        android:hint="@string/login"
+        android:textSize="@dimen/login"
+        android:textColorHint="@color/soft_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/input_password"
+        app:layout_constraintStart_toStartOf="@id/input_password"
+        app:layout_constraintTop_toBottomOf="@id/input_password"
 
+        />
 
 
 

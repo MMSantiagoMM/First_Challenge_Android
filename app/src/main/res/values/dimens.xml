@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="width_inputs">310dp</dimen>
+    <dimen name="height_inputs">55dp</dimen>
     <dimen name="login">20dp</dimen>
+    <dimen name="user_password">18dp</dimen>
+    <dimen name="forget_password">14dp</dimen>
+    <dimen name="padding_icons">13dp</dimen>
+    <dimen name="no_account">17dp</dimen>
+    <dimen name="continue_invited">15dp</dimen>
 </resources>

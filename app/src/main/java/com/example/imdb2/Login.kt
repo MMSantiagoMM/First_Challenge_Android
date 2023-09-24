@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.navigation.fragment.findNavController
 import com.example.imdb2.databinding.FragmentLoginBinding
 import com.google.android.material.textfield.TextInputEditText
 
@@ -16,14 +17,13 @@ class Login : Fragment() {
     lateinit var name: TextInputEditText
     lateinit var password: TextInputEditText
     lateinit var btn: Button
-    // TODO: Rename and change types of parameters
 
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
-        // Inflate the layout for this fragment
+
         return inflater.inflate(R.layout.fragment_login, container, false)
     }
 
@@ -37,6 +37,11 @@ class Login : Fragment() {
 
         name.addTextChangedListener(textWatcher)
         password.addTextChangedListener(textWatcher)
+
+        btn.setOnClickListener {
+            findNavController().navigate(R.id.action_login2_to_register2)
+        }
+
     }
 
     private val textWatcher = object : TextWatcher {
@@ -49,4 +54,5 @@ class Login : Fragment() {
         }
         override fun afterTextChanged(p0: Editable?) {}
     }
+
 }

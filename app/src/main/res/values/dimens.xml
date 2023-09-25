@@ -8,4 +8,5 @@
     <dimen name="padding_icons">13dp</dimen>
     <dimen name="no_account">17dp</dimen>
     <dimen name="continue_invited">15dp</dimen>
+    <dimen name="paddingInputs">16dp</dimen>
 </resources>

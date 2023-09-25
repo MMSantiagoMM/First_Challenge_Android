@@ -113,7 +113,7 @@
         android:id="@+id/acept"
         android:layout_width="@dimen/width_inputs"
         android:layout_height="@dimen/height_inputs"
-        android:background="@drawable/changing_button"
+        android:background="@drawable/shape_color_button_login"
         android:enabled="false"
         android:hint="@string/buttonAcept"
         android:textColorHint="@color/white"

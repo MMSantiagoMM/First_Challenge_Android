@@ -27,6 +27,5 @@
         <item name="android:layout_height">@dimen/height_inputs</item>
         <item name="android:enabled">false</item>
         <item name="android:textSize">@dimen/login</item>
-        <item name="android:textColorHint">@color/white</item>
     </style>
 </resources>

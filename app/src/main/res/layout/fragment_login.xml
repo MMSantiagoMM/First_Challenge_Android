@@ -75,8 +75,9 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/login"
         style="@style/buttonLoginAcept"
-        android:background="@drawable/changing_button"
+        android:background="@drawable/shape_color_button_login"
         android:hint="@string/login"
+        android:textColorHint="@drawable/text_button_enable_disable"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/input_password"
         app:layout_constraintHorizontal_bias="0.0"

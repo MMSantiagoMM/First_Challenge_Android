@@ -8,7 +8,12 @@
     <string name="account">¿No tienes cuenta?</string>
     <string name="register">Regístrate</string>
     <string name="continue_invited">Continuar como invitado</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="createAccount">Crear una cuenta</string>
+    <string name="inputName">Nombre</string>
+    <string name="inputEmail">Correo electrónico</string>
+    <string name="inputPassword">Contraseña</string>
+    <string name="charactersPassword">La contraseña debe contener 8 caracteres</string>
+    <string name="buttonAcept">Aceptar</string>
+
 
 </resources>

@@ -53,7 +53,15 @@
         android:hint="@string/inputName"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         app:layout_constraintTop_toBottomOf="@id/createAccount"
-        app:layout_constraintStart_toStartOf="@id/createAccount">
+        app:layout_constraintStart_toStartOf="@id/createAccount"
+        app:boxStrokeColor="@color/light_grey"
+        app:hintTextColor="@color/light_grey"
+        app:boxStrokeWidthFocused="0.8dp"
+        app:boxCornerRadiusTopStart="9dp"
+        app:boxCornerRadiusTopEnd="9dp"
+        app:boxCornerRadiusBottomStart="9dp"
+        app:boxCornerRadiusBottomEnd="9dp"
+        >
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -71,7 +79,14 @@
         app:layout_constraintTop_toBottomOf="@id/input_name"
         app:layout_constraintStart_toStartOf="@id/input_name"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.02">
+        app:layout_constraintVertical_bias="0.02"
+        app:boxStrokeColor="@color/light_grey"
+        app:hintTextColor="@color/light_grey"
+        app:boxStrokeWidthFocused="0.8dp"
+        app:boxCornerRadiusTopStart="9dp"
+        app:boxCornerRadiusTopEnd="9dp"
+        app:boxCornerRadiusBottomStart="9dp"
+        app:boxCornerRadiusBottomEnd="9dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -90,7 +105,14 @@
         app:layout_constraintStart_toStartOf="@id/input_email"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintVertical_bias="0.02"
-        app:endIconMode="password_toggle">
+        app:endIconMode="password_toggle"
+        app:boxStrokeColor="@color/light_grey"
+        app:hintTextColor="@color/light_grey"
+        app:boxStrokeWidthFocused="0.8dp"
+        app:boxCornerRadiusTopStart="9dp"
+        app:boxCornerRadiusTopEnd="9dp"
+        app:boxCornerRadiusBottomStart="9dp"
+        app:boxCornerRadiusBottomEnd="9dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -104,6 +126,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/charactersPassword"
+        android:fontFamily="@font/roboto_light_italic"
         app:layout_constraintTop_toBottomOf="@id/input_password"
         app:layout_constraintStart_toStartOf="@id/input_password"
         app:layout_constraintBottom_toBottomOf="parent"

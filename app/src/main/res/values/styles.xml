@@ -29,4 +29,12 @@
         <item name="android:textSize">@dimen/login</item>
         <item name="android:textColorHint">@drawable/text_button_enable_disable</item>
     </style>
+
+    <style name="inputsMaterial">
+        <item name="android:layout_width">@dimen/width_inputs</item>
+        <item name="android:layout_height">@dimen/height_inputs</item>
+        <item name="boxStrokeColor">@color/light_grey</item>
+        <item name="hintTextColor">@color/light_grey</item>
+
+    </style>
 </resources>

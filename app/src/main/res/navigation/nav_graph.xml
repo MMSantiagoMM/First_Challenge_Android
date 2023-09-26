@@ -17,5 +17,9 @@
         android:id="@+id/register2"
         android:name="com.example.imdb2.Register"
         android:label="fragment_register"
-        tools:layout="@layout/fragment_register" />
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_register2_to_login2"
+            app:destination="@id/login2" />
+    </fragment>
 </navigation>

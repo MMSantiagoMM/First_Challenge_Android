@@ -7,7 +7,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.imdb2.databinding.FragmentRegisterBinding
 
 
-class Register : Fragment(R.layout.fragment_register) {
+class RegisterFragment : Fragment(R.layout.fragment_register) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

@@ -6,20 +6,28 @@
     app:startDestination="@id/login2">
     <fragment
         android:id="@+id/login2"
-        android:name="com.example.imdb2.Login"
+        android:name="com.example.imdb2.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
             android:id="@+id/action_login2_to_register2"
             app:destination="@id/register2" />
+        <action
+            android:id="@+id/action_login2_to_mainActivity2"
+            app:destination="@id/mainActivity2" />
     </fragment>
     <fragment
         android:id="@+id/register2"
-        android:name="com.example.imdb2.Register"
+        android:name="com.example.imdb2.RegisterFragment"
         android:label="fragment_register"
         tools:layout="@layout/fragment_register" >
         <action
             android:id="@+id/action_register2_to_login2"
             app:destination="@id/login2" />
     </fragment>
+    <activity
+        android:id="@+id/mainActivity2"
+        android:name="com.example.imdb2.MainActivity2"
+        android:label="activity_main2"
+        tools:layout="@layout/activity_main2" />
 </navigation>

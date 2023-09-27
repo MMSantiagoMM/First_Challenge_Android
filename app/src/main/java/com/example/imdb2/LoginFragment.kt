@@ -14,7 +14,7 @@ import com.example.imdb2.databinding.FragmentLoginBinding
 import com.google.android.material.textfield.TextInputEditText
 
 
-class Login : Fragment() {
+class LoginFragment : Fragment() {
     lateinit var name: TextInputEditText
     lateinit var password: TextInputEditText
     lateinit var btn: Button
@@ -43,6 +43,11 @@ class Login : Fragment() {
 
         register.setOnClickListener {
             findNavController().navigate(R.id.action_login2_to_register2)
+        }
+        btn.setOnClickListener {
+            findNavController().navigate(R.id.action_login2_to_mainActivity2)
+
+
         }
 
     }

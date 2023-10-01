@@ -12,17 +12,12 @@
         <item name="colorOnSurface">@color/black</item>
         <!-- ON BACKGROUND -->
         <item name="colorOnBackground">@color/dark_grey</item>
-        
-        
+
+        <item name="windowSplashScreenBackground">@color/yellow</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+
     </style>
 
     <style name="Theme.IMDb2" parent="Base.Theme.IMDb2" />
-    
-    <style name="Theme.IMDb2.SplashScreen" parent="Theme.SplashScreen">
-        <item name="windowSplashScreenBackground">@color/yellow</item>
-        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
-        <item name="postSplashScreenTheme">@style/Base.Theme.IMDb2</item>
-    </style>
-
 
 </resources>

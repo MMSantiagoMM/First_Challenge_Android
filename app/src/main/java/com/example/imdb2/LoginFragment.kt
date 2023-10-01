@@ -45,10 +45,10 @@ class LoginFragment : Fragment() {
             findNavController().navigate(R.id.action_login2_to_register2)
         }
         btn.setOnClickListener {
+            activity?.finish()
             findNavController().navigate(R.id.action_login2_to_mainActivity2)
-
-
         }
+
 
     }
 

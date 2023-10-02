@@ -1,13 +1,11 @@
 package com.example.imdb2
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.replace
+
 import com.example.imdb2.databinding.ActivityMain2Binding
-import com.example.imdb2.databinding.ActivityMainBinding
-import com.google.android.material.bottomnavigation.BottomNavigationView
+
 
 class MainActivity2 : AppCompatActivity() {
 

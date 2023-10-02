@@ -5,6 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.GridLayoutManager
+import com.example.imdb2.databinding.FragmentSearchBinding
+import com.example.imdb2.viewmodels.MovieViewModel
+import com.example.imdb2.views.AdapterMovie
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -16,10 +21,15 @@ private const val ARG_PARAM2 = "param2"
  * Use the [SearchFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
+
 class SearchFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+
+    private lateinit var binding: FragmentSearchBinding
+    private lateinit var viewModel: MovieViewModel
+    private lateinit var adapterMovie: AdapterMovie
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -55,5 +65,29 @@ class SearchFragment : Fragment() {
                     putString(ARG_PARAM2, param2)
                 }
             }
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        viewModel = ViewModelProvider(this)[MovieViewModel::class.java]
+
+        setupRecyclerView()
+
+        viewModel.listMovies.observe(this){
+            adapterMovie.listMovies = it
+            adapterMovie.notifyDataSetChanged()
+        }
+
+        viewModel.getPoster()
+    }
+
+    private fun setupRecyclerView() {
+        val layoutManager = GridLayoutManager(context,3)
+        binding = FragmentSearchBinding.inflate(layoutInflater)
+
+        binding.rvMovies.layoutManager = layoutManager
+        adapterMovie = AdapterMovie(this, arrayListOf())
+        binding.rvMovies.adapter = adapterMovie
     }
 }
